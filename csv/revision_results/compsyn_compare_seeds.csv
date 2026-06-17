@@ -1,0 +1,6 @@
+seed,top8_overlap,ours_top8,compsyn_top8
+blue,0,"['jellyfish', 'storm', 'summit', 'flickering', 'destiny', 'bedtime', 'technology', 'starry']","['cloud', 'dive', 'ocean', 'whale', 'frozen', 'ripple', 'sky', 'weather']"
+rose,0,"['berry', 'cheery', 'arsenal', 'cherry', 'widow', 'rot', 'beloved', 'madder']","['mutter', 'priest', 'deer', 'beautiful', 'creaking', 'tiger', 'stare', 'lingering']"
+gold,0,"['brass', 'bed', 'fur', 'biscuit', 'ceiling', 'relief', 'oyster', 'westward']","['chestnut', 'stew', 'rouge', 'plum', 'altar', 'hall', 'cigar', 'ruby']"
+sea,1,"['monument', 'sleet', 'seabird', 'manly', 'facade', 'dolphin', 'sailing', 'forth']","['floating', 'cooling', 'sailing', 'launch', 'united', 'weather', 'unfrozen', 'midday']"
+stone,0,"['springtime', 'spring', 'bluebird', 'field', 'pony', 'saving', 'flicker', 'hare']","['cutlass', 'harness', 'recoil', 'guarded', 'milkman', 'till', 'tremble', 'actual']"

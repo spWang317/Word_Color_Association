@@ -1,0 +1,223 @@
+"""
+R2.6b — Page 1 vs Page 10 (or last) Google Image screenshot capture.
+
+For each word:
+  - Open Google Image search.
+  - Capture screenshot of the top viewport (page 1).
+  - Progressively scroll down by one viewport, clicking 'Show more results'
+    if Google halts the infinite scroll.
+  - Capture screenshot of the deepest reachable viewport (target page 10).
+  - Record metadata: max_page reached, whether we hit bottom.
+
+Outputs:
+  Images/r26b_pages/{word}/page_1.png
+  Images/r26b_pages/{word}/page_{N}.png   (N = max reached, 1–10)
+  csv/revision_results/page_metadata.csv
+"""
+
+import csv
+import os
+import time
+
+from PIL import Image
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+
+OUT_DIR = "Images/r26b_pages"
+META_PATH = "csv/revision_results/page_metadata.csv"
+os.makedirs(OUT_DIR, exist_ok=True)
+os.makedirs(os.path.dirname(META_PATH), exist_ok=True)
+
+# Same 30-word relaxed sample used in R2.6 v2
+WORDS = [
+    "activity", "aside", "blog", "boat", "boyfriend", "business",
+    "character", "college", "corporation", "customer", "daughter",
+    "device", "door", "equivalent", "escape", "form", "government",
+    "jail", "morning", "nothing", "peace", "position", "situation",
+    "squad", "study", "success", "surprise", "television", "vice", "week",
+]
+
+TARGET_PAGE = 10
+VIEWPORT_HEIGHT = 1080
+WINDOW_WIDTH = 1920
+
+
+def make_driver():
+    options = webdriver.ChromeOptions()
+    options.add_argument("--headless")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument(f"--window-size={WINDOW_WIDTH},{VIEWPORT_HEIGHT}")
+    options.add_argument("--guest")
+    options.add_argument("--disable-extensions")
+    options.add_argument("--disable-plugins")
+    options.add_argument("--force-color-profile=srgb")
+    options.add_argument("--force-light-mode")
+    options.add_argument("--disable-features=DarkMode,WebUIDarkMode")
+    options.add_argument("disable-blink-features=AutomationControlled")
+    options.add_argument(
+        "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+    )
+    driver = webdriver.Chrome(options=options)
+    driver.execute_cdp_cmd(
+        "Emulation.setEmulatedMedia",
+        {"features": [{"name": "prefers-color-scheme", "value": "light"}]},
+    )
+    driver.set_window_size(WINDOW_WIDTH, VIEWPORT_HEIGHT)
+    return driver
+
+
+def try_click_show_more(driver):
+    """Click any visible 'Show more results' / 'See more' button."""
+    candidates = driver.find_elements(
+        By.XPATH,
+        "//input[@type='button' or @type='submit'] | //button | //span | //div[@role='button']",
+    )
+    for btn in candidates:
+        try:
+            txt = (btn.text or btn.get_attribute("value") or "").strip().lower()
+        except Exception:
+            continue
+        if any(k in txt for k in ("show more", "see more", "more results")):
+            try:
+                driver.execute_script("arguments[0].scrollIntoView();", btn)
+                time.sleep(0.5)
+                btn.click()
+                time.sleep(3)
+                return True
+            except Exception:
+                continue
+    return False
+
+
+def crop_top_overlay(screenshot_path):
+    """Trim the 5% top sliver (search bar / Google chrome) to match existing scrape."""
+    with Image.open(screenshot_path) as img:
+        w, h = img.size
+        cropped = img.crop((0, int(h * 0.05), w, h))
+        cropped.save(screenshot_path)
+
+
+def capture_word(word, driver):
+    out_dir = os.path.join(OUT_DIR, word)
+    os.makedirs(out_dir, exist_ok=True)
+    page_paths = {}
+
+    driver.get("https://www.google.com/imghp")
+    time.sleep(4)
+    search_box = driver.find_element(By.NAME, "q")
+    search_box.send_keys(word)
+    search_box.send_keys(Keys.RETURN)
+    time.sleep(10)
+
+    # Wait initial load
+    images = driver.find_elements(By.TAG_NAME, "img")
+    deadline = time.time() + 20
+    while time.time() < deadline:
+        if all(img.get_attribute("complete") for img in images):
+            break
+        time.sleep(1)
+        images = driver.find_elements(By.TAG_NAME, "img")
+
+    # ---- Page 1: top viewport
+    driver.execute_script("window.scrollTo(0, 0);")
+    time.sleep(3)
+    p1_path = os.path.join(out_dir, "page_1.png")
+    with open(p1_path, "wb") as f:
+        f.write(driver.get_screenshot_as_png())
+    crop_top_overlay(p1_path)
+    page_paths[1] = p1_path
+
+    # ---- Iteratively scroll for pages 2..TARGET_PAGE
+    max_page = 1
+    hit_bottom = False
+    stagnant_rounds = 0
+
+    for page_idx in range(2, TARGET_PAGE + 1):
+        target_y = (page_idx - 1) * VIEWPORT_HEIGHT
+        # Scroll to bottom first to encourage infinite-scroll load
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        time.sleep(2)
+        cur_height = driver.execute_script("return document.body.scrollHeight;")
+
+        # If not enough page height, try clicking Show more then bottom-scroll again
+        attempts = 0
+        while cur_height < target_y + VIEWPORT_HEIGHT and attempts < 3:
+            clicked = try_click_show_more(driver)
+            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+            time.sleep(3)
+            new_height = driver.execute_script("return document.body.scrollHeight;")
+            if new_height <= cur_height and not clicked:
+                attempts += 1
+            else:
+                attempts = 0
+            cur_height = new_height
+            if new_height <= cur_height:
+                stagnant_rounds += 1
+                if stagnant_rounds >= 2:
+                    break
+
+        if cur_height < target_y + VIEWPORT_HEIGHT:
+            # Bottom hit — record last viewport
+            hit_bottom = True
+            last_y = max(0, cur_height - VIEWPORT_HEIGHT)
+            driver.execute_script(f"window.scrollTo(0, {last_y});")
+            time.sleep(3)
+            last_page_idx = max(2, page_idx - 1) if page_idx > 2 else page_idx
+            # Save as the last reached page
+            last_path = os.path.join(out_dir, f"page_{last_page_idx}.png")
+            with open(last_path, "wb") as f:
+                f.write(driver.get_screenshot_as_png())
+            crop_top_overlay(last_path)
+            page_paths[last_page_idx] = last_path
+            max_page = last_page_idx
+            break
+
+        # We have enough scrollable content for page_idx
+        driver.execute_script(f"window.scrollTo(0, {target_y});")
+        time.sleep(3)
+        page_path = os.path.join(out_dir, f"page_{page_idx}.png")
+        with open(page_path, "wb") as f:
+            f.write(driver.get_screenshot_as_png())
+        crop_top_overlay(page_path)
+        page_paths[page_idx] = page_path
+        max_page = page_idx
+
+    # If only page 1 was captured but bottom flag never tripped, it means TARGET reached on page 1 — set single_page
+    single_page = (max_page == 1)
+    return {"word": word, "max_page": max_page, "hit_bottom": hit_bottom,
+            "single_page": single_page, "pages": page_paths}
+
+
+def main():
+    driver = make_driver()
+    rows = []
+    try:
+        for i, w in enumerate(WORDS, 1):
+            print(f"[{i}/{len(WORDS)}] {w}: starting...", flush=True)
+            try:
+                info = capture_word(w, driver)
+                print(
+                    f"  -> max_page={info['max_page']}  hit_bottom={info['hit_bottom']}  "
+                    f"single_page={info['single_page']}",
+                    flush=True,
+                )
+                rows.append([w, info["max_page"], int(info["hit_bottom"]), int(info["single_page"])])
+            except Exception as e:
+                print(f"  ERROR on {w}: {e!r}", flush=True)
+                rows.append([w, 0, 0, 0])
+            time.sleep(2)
+    finally:
+        driver.quit()
+
+    with open(META_PATH, "w", newline="") as f:
+        wr = csv.writer(f)
+        wr.writerow(["word", "max_page", "hit_bottom", "single_page"])
+        wr.writerows(rows)
+    print(f"\nMetadata written: {META_PATH}")
+
+
+if __name__ == "__main__":
+    main()

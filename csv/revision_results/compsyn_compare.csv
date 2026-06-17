@@ -1,0 +1,18 @@
+metric,value
+RSA Pearson r — median (ours ↔ jzazbz),0.458078896153409
+RSA Pearson r — mean (ours ↔ jzazbz),0.45958511788298134
+RSA Pearson r — SD (ours ↔ jzazbz),0.05750597669918057
+RSA Spearman rho — median (ours ↔ jzazbz),0.4210867579778327
+RSA Spearman rho — mean (ours ↔ jzazbz),0.42199983747007125
+RSA Spearman rho — SD (ours ↔ jzazbz),0.05310373263985926
+RSA Pearson r — median (ours ↔ rgb),0.4594156660269517
+RSA Spearman rho — median (ours ↔ rgb),0.42393373063331574
+Null Pearson mean,-0.00480393422673916
+Null Pearson SD,0.04235365314390044
+Null Pearson max,0.11858544414078569
+Observed draws above null max,100.0
+Number of random subsamples (K),100.0
+Overlap vocab size,5449.0
+RSA sample size (N per draw),100.0
+Total source vocab (ours),9244.0
+Total comp-syn vocab,39949.0

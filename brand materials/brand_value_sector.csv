@@ -1,0 +1,100 @@
+,Col_0,Col_1,Col_2,Col_3,Col_4,Col_5,Col_6,Col_7,Col_8,Col_9,Col_10,Col_11,Col_12
+0,AAPL,Apple Inc.,United States,3.55 TUSD,236.00USD,−0.67%,1.47,37.45,6.30USD,−1.95%,0.42%,Electronic technology,Buy
+1,NVDA,NVIDIA Corporation,United States,2.94 TUSD,120.07USD,−3.67%,1.12,47.30,2.54USD,+235.19%,0.03%,Electronic technology,Strong buy
+2,MSFT,Microsoft Corporation,United States,3.09 TUSD,415.06USD,+0.02%,1.28,33.43,12.42USD,+12.29%,0.74%,Technology services,Strong buy
+3,AMZN,"Amazon.com, Inc.",United States,2.5 TUSD,237.68USD,+1.30%,1.03,50.94,4.67USD,+143.64%,0.00%,Retail trade,Strong buy
+4,GOOG,Alphabet Inc.,United States,2.51 TUSD,205.60USD,+1.47%,1.03,27.27,7.54USD,+44.53%,0.29%,Technology services,Buy
+5,META,"Meta Platforms, Inc.",United States,1.74 TUSD,689.18USD,+0.32%,1.08,28.81,23.92USD,+60.59%,0.29%,Technology services,Strong buy
+6,2222,Saudi Arabian Oil Co. (Aramco),Saudi Arabia,1.79 TUSD,27.75SAR,−0.18%,0.50,16.38,0.45USD,−13.73%,6.93%,Energy minerals,Buy
+7,TSLA,"Tesla, Inc.",United States,1.3 TUSD,404.60USD,+1.08%,1.21,198.50,2.04USD,−52.63%,0.00%,Consumer durables,Neutral
+8,AVGO,Broadcom Inc.,United States,1.04 TUSD,221.27USD,+2.60%,1.10,181.50,1.22USD,−62.99%,0.98%,Electronic technology,Buy
+9,BRK.A,Berkshire Hathaway Inc.,United States,1.01 TUSD,"702,613.50USD",−0.91%,0.87,9.46,"74,261.12USD",+40.80%,0.00%,Finance,Buy
+10,2330,Taiwan Semiconductor Manufacturing (TSMC),Taiwan,894.14 BUSD,"1,135TWD",+1.34%,1.15,25.08,1.38USD,+39.93%,1.32%,Electronic technology,Strong buy
+11,WMT,Walmart Inc.,United States,788.56 BUSD,98.16USD,−0.50%,1.07,40.31,2.44USD,+21.28%,0.85%,Retail trade,Strong buy
+12,LLY,Eli Lilly and Company,United States,769.97 BUSD,811.08USD,−1.48%,0.71,88.73,9.14USD,+68.74%,0.64%,Health technology,Buy
+13,JPM,JP Morgan Chase & Co.,United States,752.54 BUSD,267.30USD,−0.35%,0.68,13.54,19.75USD,+21.75%,1.80%,Finance,Buy
+14,V,Visa Inc.,United States,734.71 BUSD,341.80USD,−0.36%,1.53,34.91,9.79USD,+14.45%,0.63%,Commercial services,Buy
+15,MA,Mastercard Incorporated,United States,509.76 BUSD,555.43USD,−1.87%,1.53,39.98,13.89USD,+17.41%,0.49%,Commercial services,Buy
+16,ORCL,Oracle Corporation,United States,475.65 BUSD,170.06USD,−0.19%,0.40,41.62,4.09USD,+13.02%,0.94%,Technology services,Buy
+17,700,Tencent Holdings Limited,China,468.23 BUSD,401.2HKD,+1.42%,0.55,20.68,2.49USD,−12.42%,0.85%,Technology services,Strong buy
+18,UNH,UnitedHealth Group Incorporated,United States,499.25 BUSD,542.49USD,−0.56%,0.87,34.91,15.54USD,−34.84%,1.51%,Health services,Strong buy
+19,XOM,Exxon Mobil Corporation,United States,469.53 BUSD,106.83USD,−2.50%,1.34,13.62,7.85USD,−11.65%,3.59%,Energy minerals,Buy
+20,COST,Costco Wholesale Corporation,United States,434.97 BUSD,979.88USD,+0.09%,0.96,57.54,17.03USD,+16.13%,0.46%,Retail trade,Buy
+21,NFLX,"Netflix, Inc.",United States,417.82 BUSD,976.76USD,+0.36%,0.61,49.26,19.83USD,+65.00%,0.00%,Technology services,Buy
+22,HD,"Home Depot, Inc.",United States,409.25 BUSD,411.98USD,−0.61%,0.89,27.99,14.72USD,−5.56%,2.18%,Retail trade,Buy
+23,PG,Procter & Gamble Company,United States,389.22 BUSD,165.99USD,−0.85%,0.68,26.45,6.28USD,+5.12%,2.43%,Consumer non-durables,Buy
+24,NOVO_B,Novo Nordisk B AS,Denmark,374.99 BUSD,607.3DKK,+0.60%,0.83,28.65,3.16USD,+26.81%,1.63%,Health technology,Buy
+25,JNJ,Johnson & Johnson,United States,366.32 BUSD,152.15USD,−0.47%,0.77,26.24,5.80USD,+3.95%,3.23%,Health technology,Buy
+26,BAC,Bank of America Corporation,United States,352.38 BUSD,46.30USD,−0.90%,0.80,14.38,3.22USD,+4.73%,2.16%,Finance,Buy
+27,MC,LVMH,France,365.06 BUSD,703.5EUR,−1.72%,0.94,28.01,26.00USD,−17.18%,1.85%,Consumer non-durables,Buy
+28,ABBV,AbbVie Inc.,United States,324.98 BUSD,183.90USD,+4.70%,1.85,76.71,2.40USD,−11.88%,3.42%,Health technology,Buy
+29,SAP,SAP SE,Germany,325.53 BUSD,268.50EUR,+0.17%,1.03,101.56,2.74USD,−2.69%,0.82%,Technology services,Buy
+30,CRM,"Salesforce, Inc.",United States,327.01 BUSD,341.70USD,−0.54%,0.78,56.22,6.08USD,+130.72%,0.47%,Technology services,Buy
+31,601398,Industrial and Commercial Bank of China Limited,China,311.81 BUSD,6.82CNY,+2.25%,1.14,—,—,—,6.60%,Finance,Buy
+32,TMUS,"T-Mobile US, Inc.",United States,270.36 BUSD,232.97USD,−0.60%,0.79,24.08,9.68USD,+39.48%,1.21%,Communications,Buy
+33,IHC,Hermès International,United Arab Emirates,240.31 BUSD,403.0AED,+0.27%,0.91,32.81,3.34USD,+104.08%,0.00%,Health services,—
+34,ASML,ASML Holding,Netherlands,291.04 BUSD,722.7EUR,+2.26%,0.88,37.57,19.91USD,−3.31%,0.86%,Electronic technology,Buy
+35,CVX,Chevron Corporation,United States,268.11 BUSD,149.19USD,−4.56%,2.31,15.38,9.70USD,−14.54%,4.37%,Energy minerals,Buy
+36,PLTR,Palantir Technologies Inc.,United States,187.91 BUSD,82.49USD,+1.56%,1.29,417.67,0.20USD,+205.26%,0.00%,Technology services,Neutral
+37,WFC,Wells Fargo & Company,United States,259.17 BUSD,78.80USD,−0.03%,1.05,14.66,5.38USD,+11.30%,1.90%,Finance,Buy
+38,RO,Roche Holding AG,Switzerland,253.62 BUSD,303.4CHF,−0.20%,1.29,29.40,11.36USD,−27.83%,3.16%,Health technology,Neutral
+39,IBM,Toyota Motor Corporation,United States,236.43 BUSD,255.70USD,−1.00%,1.28,39.86,6.41USD,−21.02%,2.61%,Technology services,Neutral
+40,CSCO,"Cisco Systems, Inc.",United States,241.36 BUSD,60.60USD,+0.21%,0.80,26.09,2.32USD,−29.88%,2.64%,Electronic technology,Buy
+41,600519,"Kweichow Moutai Co., Ltd.",China,248.55 BUSD,"1,434.99CNY",−0.07%,1.17,21.80,9.38USD,+16.14%,3.82%,Consumer non-durables,Strong buy
+42,005930,Samsung Electronics,South Korea,239.21 BUSD,"52,400KRW",−2.42%,2.61,—,—,—,2.76%,Electronic technology,Buy
+43,BABA,Alibaba Group Holding Limited,China,215.59 BUSD,98.84USD,−3.80%,1.39,20.29,4.87USD,−32.56%,0.99%,Retail trade,Strong buy
+44,ACN,Accenture plc,Ireland,240.78 BUSD,384.95USD,+1.10%,1.08,32.27,11.93USD,+10.55%,1.44%,Technology services,Buy
+45,IHC,International Holding Company PJSC,United Arab Emirates,240.31 BUSD,403.0AED,+0.27%,0.91,32.81,3.34USD,+104.08%,0.00%,Health services,—
+46,601288,Agricultural Bank of China Limited,China,243.45 BUSD,5.16CNY,+2.38%,1.32,—,—,—,6.73%,Finance,Buy
+47,IBM,IBM (International Business Machines Corporation),United States,236.43 BUSD,255.70USD,−1.00%,1.28,39.86,6.41USD,−21.02%,2.61%,Technology services,Neutral
+48,PM,Philip Morris International Inc.,United States,202.44 BUSD,130.20USD,−0.09%,1.02,20.65,6.30USD,+22.51%,4.07%,Consumer non-durables,Buy
+49,ABT,Abbott Laboratories,United States,221.89 BUSD,127.93USD,−0.68%,0.75,16.70,7.66USD,+134.63%,1.75%,Health technology,Buy
+50,AZN,AstraZeneca plc,United Kingdom,218.32 BUSD,"11,344GBX",+0.27%,1.27,34.58,4.39USD,+6.75%,2.06%,Health technology,Strong buy
+51,MS,Morgan Stanley,United States,223.02 BUSD,138.43USD,−1.08%,0.66,17.41,7.95USD,+53.66%,2.62%,Finance,Neutral
+52,MCD,McDonald's Corporation,United States,206.89 BUSD,288.70USD,−0.56%,0.82,25.34,11.39USD,+0.36%,2.35%,Consumer services,Buy
+53,GE,GE Aerospace,United States,220.32 BUSD,203.57USD,−0.97%,0.75,34.08,5.97USD,−28.53%,0.55%,Electronic technology,Buy
+54,LIN,Linde plc,United Kingdom,212.42 BUSD,446.12USD,−0.06%,1.26,33.86,13.18USD,+8.86%,1.25%,Process industries,Buy
+55,AXP,American Express Company,United States,223.63 BUSD,317.45USD,−0.47%,0.66,22.65,14.01USD,+24.94%,0.88%,Finance,Neutral
+56,MRK,"Merck & Company, Inc.",United States,249.98 BUSD,98.82USD,−0.13%,0.90,20.70,4.77USD,+165.21%,3.16%,Health technology,Buy
+57,NOVO_B,Nestlé S.A.,Denmark,374.99 BUSD,607.3DKK,+0.60%,0.83,28.65,3.16USD,+26.81%,1.63%,Health technology,Buy
+58,ISRG,"Intuitive Surgical, Inc.",United States,203.69 BUSD,571.88USD,−1.43%,0.77,89.17,6.41USD,+27.54%,0.00%,Health technology,Buy
+59,600941,China Mobile Ltd,Hong Kong,213.19 BUSD,110.97CNY,+1.79%,1.19,17.42,0.91USD,+2.78%,4.11%,Communications,Strong buy
+60,TMO,Thermo Fisher Scientific Inc.,United States,228.64 BUSD,597.75USD,−1.48%,1.06,36.17,16.52USD,+6.95%,0.26%,Health technology,Strong buy
+61,NOW,"ServiceNow, Inc.",United States,209.79 BUSD,"1,018.38USD",+0.56%,1.41,148.88,6.84USD,−18.73%,0.00%,Technology services,Buy
+62,NOVN,Novartis AG,Switzerland,208.06 BUSD,95.58CHF,+1.90%,2.37,18.47,5.70USD,−18.98%,3.45%,Health technology,Neutral
+63,601939,China Construction Bank Corporation,China,206.52 BUSD,8.54CNY,+1.55%,0.86,6.41,0.19USD,+0.28%,6.99%,Finance,Strong buy
+64,BX,Blackstone Inc.,United States,214.52 BUSD,177.11USD,−0.38%,0.92,48.87,3.62USD,+97.40%,1.95%,Finance,Neutral
+65,GS,"Goldman Sachs Group, Inc.",United States,198.81 BUSD,640.40USD,−0.82%,0.67,15.79,40.55USD,+77.68%,1.80%,Finance,Buy
+66,601857,PetroChina Company Limited,China,201.73 BUSD,8.33CNY,+1.34%,0.93,—,—,—,5.40%,Energy minerals,Buy
+67,PEP,"PepsiCo, Inc.",United States,206.75 BUSD,150.69USD,−0.80%,0.81,22.21,6.78USD,+13.24%,3.54%,Consumer non-durables,Buy
+68,SHEL,Shell plc,United Kingdom,201.4 BUSD,"2,678.5GBX",+0.58%,1.09,13.63,2.46USD,−13.64%,4.00%,Energy minerals,Strong buy
+69,DIS,Walt Disney Company,United States,204.46 BUSD,113.06USD,−0.33%,0.99,41.62,2.72USD,+111.11%,0.84%,Consumer services,Buy
+70,ADBE,Adobe Inc.,United States,190.43 BUSD,437.45USD,−1.92%,1.25,35.25,12.41USD,+4.98%,0.00%,Technology services,Buy
+71,RELIANCE,Reliance Industries Limited,India,197.43 BUSD,"1,264.60INR",−0.04%,0.69,24.73,0.60USD,−1.11%,0.40%,Energy minerals,Buy
+72,601988,Bank of China Limited,China,201.1 BUSD,5.45CNY,+2.64%,1.44,6.89,0.11USD,+1.57%,6.55%,Finance,Buy
+73,QCOM,Qualcomm Incorporated,United States,191.16 BUSD,172.93USD,+0.58%,1.00,19.26,8.98USD,+39.81%,1.94%,Electronic technology,Buy
+74,HSBA,HSBC Holdings plc,United Kingdom,187.42 BUSD,845.7GBX,+0.65%,1.51,8.89,1.27USD,−15.12%,5.73%,Finance,Buy
+75,OR,L'Oréal,France,197.86 BUSD,358.50EUR,−1.39%,1.40,29.68,12.94USD,+11.09%,1.84%,Consumer non-durables,Neutral
+76,AMD,"Advanced Micro Devices, Inc. (AMD)",United States,188.16 BUSD,115.95USD,−2.45%,1.13,103.72,1.12USD,+781.62%,0.00%,Electronic technology,Buy
+77,T,AT&T Inc.,United States,170.27 BUSD,23.73USD,−1.21%,0.93,15.90,1.49USD,−24.00%,4.68%,Communications,Buy
+78,CAT,Caterpillar Inc.,United States,179.33 BUSD,371.44USD,−0.94%,1.10,—,—,—,1.49%,Producer manufacturing,Neutral
+79,ARM,Arm Holdings plc,United Kingdom,167.69 BUSD,159.55USD,+4.12%,0.89,264.16,0.60USD,+250.55%,0.00%,Electronic technology,Buy
+80,RTX,RTX Corporation,United States,171.63 BUSD,128.95USD,−0.02%,1.06,36.28,3.55USD,+58.77%,1.92%,Electronic technology,Buy
+81,CBA,Commonwealth Bank of Australia,Australia,166.61 BUSD,160.56AUD,−0.03%,1.70,—,—,—,2.90%,Finance,Sell
+82,ITX,"Inditex (Industria de Diseño Textil, S.A.)",Spain,170.45 BUSD,52.72EUR,−0.04%,0.04,—,—,—,2.37%,Retail trade,Buy
+83,RY,Royal Bank of Canada,Canada,172.8 BUSD,177.18CAD,−0.83%,0.70,15.75,8.07USD,+7.18%,3.22%,Finance,Buy
+84,VZ,Verizon Communications Inc.,United States,165.82 BUSD,39.39USD,−0.20%,1.63,9.51,4.14USD,+50.24%,6.82%,Communications,Buy
+85,SIE,Siemens AG,Germany,168.78 BUSD,207.45EUR,+1.12%,0.91,19.97,11.57USD,+4.74%,2.27%,Producer manufacturing,Buy
+86,601988,Tata Consultancy Services Limited,China,201.1 BUSD,5.45CNY,+2.64%,1.44,6.89,0.11USD,+1.57%,6.55%,Finance,Buy
+87,UBER,"Uber Technologies, Inc.",United States,170.23 BUSD,81.49USD,+2.61%,0.47,17.78,4.58USD,+422.53%,0.00%,Transportation,Strong buy
+88,TXN,Texas Instruments Incorporated,United States,168.4 BUSD,184.61USD,−0.36%,0.71,35.56,5.19USD,−26.58%,2.88%,Electronic technology,Neutral
+89,INTU,Intuit Inc.,United States,168.37 BUSD,601.51USD,−0.51%,0.86,58.51,10.28USD,+12.51%,0.65%,Technology services,Buy
+90,BKNG,Booking Holdings Inc.,United States,156.8 BUSD,"4,737.56USD",−0.77%,0.84,32.15,147.38USD,+2.64%,0.74%,Consumer services,Buy
+91,SPGI,S&P Global Inc.,United States,161.79 BUSD,521.41USD,−0.41%,1.16,46.00,11.33USD,+46.61%,0.70%,Commercial services,Strong buy
+92,PDD,PDD Holdings Inc.,Ireland,155.42 BUSD,111.91USD,−3.02%,0.98,11.00,10.17USD,+127.81%,0.00%,Retail trade,Strong buy
+93,AMGN,Amgen Inc.,United States,153.42 BUSD,285.42USD,+0.49%,1.31,36.55,7.81USD,−44.46%,3.15%,Health technology,Buy
+94,300750,Contemporary Amperex Technology Co. Ltd. (CATL),China,155.34 BUSD,257.00CNY,−1.39%,0.89,23.09,1.59USD,+10.43%,0.78%,Producer manufacturing,Strong buy
+95,NVDA,Boston Scientific Corporation,United States,2.94 TUSD,120.07USD,−3.67%,1.12,47.30,2.54USD,+235.19%,0.03%,Electronic technology,Strong buy
+96,SHOP,Shopify Inc.,Canada,167.44 BUSD,129.31USD,+0.75%,0.63,86.21,1.50USD,"+1,429.16%",0.00%,Technology services,Buy
+97,BLK,"BlackRock, Inc.",United States,166.57 BUSD,"1,075.50USD",+0.37%,1.25,25.61,42.00USD,+15.01%,1.90%,Finance,Buy
+98,601398,"China Merchants Bank Co., Ltd.",China,311.81 BUSD,6.82CNY,+2.25%,1.14,—,—,—,6.60%,Finance,Buy

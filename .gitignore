@@ -1,0 +1,7 @@
+_revision_dev/
+venv/
+.hidden_backups_*/
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
