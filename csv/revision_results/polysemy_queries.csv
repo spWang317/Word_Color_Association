@@ -1,0 +1,281 @@
+query_word,synset_id,sense_index,disambiguator,query
+conception,,0,,conception
+conception,concept.n.01,1,concept,conception concept
+conception,creation.n.03,3,creation,conception creation
+conception,invention.n.01,4,design,conception design
+van,,0,,van
+van,avant-garde.n.01,1,vanguard,van vanguard
+van,van.n.04,4,caravan,van caravan
+expression,,0,,expression
+expression,expression.n.01,1,face,expression face
+expression,expression.n.02,2,reflexion,expression reflexion
+expression,expression.n.03,3,verbal,expression verbal
+expression,saying.n.01,4,saying,expression saying
+expression,formulation.n.03,5,formulation,expression formulation
+expression,formula.n.01,6,formula,expression formula
+expression,construction.n.02,8,construction,expression construction
+union,,0,,union
+union,union.n.01,1,labor,union labor
+union,union.n.02,2,North,union North
+union,coupling.n.03,3,mating,union mating
+union,union.n.04,4,unification,union unification
+union,marriage.n.01,5,wedlock,union wedlock
+union,union.n.06,6,conglutination,union conglutination
+union,union.n.08,8,sum,union sum
+union,union.n.11,11,uniting,union uniting
+center,,0,,center
+center,center.n.01,1,eye,center eye
+center,center_field.n.01,2,field,center field
+center,center.n.03,3,centre,center centre
+center,kernel.n.03,5,nub,center nub
+center,center.n.07,7,nerve,center nerve
+center,center.n.10,10,snapper,center snapper
+center,plaza.n.02,15,mall,center mall
+interference,,0,,interference
+interference,intervention.n.02,1,intervention,interference intervention
+interference,hindrance.n.03,2,hindrance,interference hindrance
+interference,noise.n.03,3,noise,interference noise
+interference,hindrance.n.02,5,hitch,interference hitch
+ruth,,0,,ruth
+ruth,ruth.n.01,1,Babe,ruth Babe
+ruth,commiseration.n.01,3,pity,ruth pity
+ruth,ruth.n.04,4,Book_of,ruth Book of
+entrance,,0,,entrance
+entrance,entrance.n.01,1,entry,entrance entry
+entrance,entrance.n.02,2,entering,entrance entering
+treatment,,0,,treatment
+treatment,treatment.n.01,1,intervention,treatment intervention
+treatment,treatment.n.02,2,handling,treatment handling
+treatment,discussion.n.01,4,discourse,treatment discourse
+fallout,,0,,fallout
+fallout,fallout.n.01,1,radioactive_dust,fallout radioactive dust
+fallout,side_effect.n.02,2,side_effect,fallout side effect
+back,,0,,back
+back,back.n.01,1,dorsum,back dorsum
+back,rear.n.05,2,rear,back rear
+back,spinal_column.n.01,5,spine,back spine
+back,binding.n.05,6,cover,back cover
+back,back.n.08,8,backrest,back backrest
+consequence,,0,,consequence
+consequence,consequence.n.01,1,event,consequence event
+consequence,consequence.n.02,2,aftermath,consequence aftermath
+consequence,consequence.n.03,3,import,consequence import
+blood,,0,,blood
+blood,rake.n.01,3,rip,blood rip
+blood,lineage.n.01,4,line,blood line
+belt,,0,,belt
+belt,knock.n.03,4,bang,belt bang
+belt,swath.n.02,5,swath,belt swath
+belt,belt.n.06,6,ammunition,belt ammunition
+belt,knock.n.05,7,rap,belt rap
+society,,0,,society
+society,club.n.02,2,club,society club
+society,company.n.03,3,company,society company
+society,society.n.04,4,high,society high
+estate,,0,,estate
+estate,estate.n.02,2,land,estate land
+estate,estate_of_the_realm.n.01,3,of_the_realm,estate of the realm
+appointment,,0,,appointment
+appointment,appointment.n.01,1,naming,appointment naming
+appointment,date.n.03,2,date,appointment date
+appointment,appointment.n.03,3,fitting,appointment fitting
+appointment,appointee.n.02,4,appointee,appointment appointee
+operations,,0,,operations
+operations,operations.n.01,1,trading,operations trading
+operations,operation.n.01,2,operation,operations operation
+operations,operation.n.06,7,surgery,operations surgery
+operations,process.n.02,10,process,operations process
+boss,,0,,boss
+boss,foreman.n.01,1,chief,boss chief
+boss,boss.n.02,2,hirer,boss hirer
+boss,party_boss.n.01,4,party,boss party
+boss,knob.n.01,5,knob,boss knob
+boss,bos.n.01,6,Bos,boss Bos
+walk,,0,,walk
+walk,walk.n.01,1,walking,walk walking
+walk,base_on_balls.n.01,2,pass,walk pass
+walk,walk.n.03,3,manner_of_walking,walk manner of walking
+walk,walk.n.05,5,paseo,walk paseo
+walk,walk_of_life.n.01,7,of_life,walk of life
+invention,,0,,invention
+invention,invention.n.01,1,design,invention design
+invention,invention.n.02,2,innovation,invention innovation
+breath,,0,,breath
+breath,breath.n.03,3,breather,breath breather
+breath,hint.n.01,4,hint,breath hint
+mechanism,,0,,mechanism
+mechanism,mechanism.n.01,1,chemical,mechanism chemical
+mechanism,mechanism.n.02,2,mechanics,mechanism mechanics
+earth,,0,,earth
+earth,earth.n.01,1,globe,earth globe
+earth,earth.n.02,2,ground,earth ground
+earth,land.n.04,3,land,earth land
+earth,worldly_concern.n.01,6,world,earth world
+vehicles,,0,,vehicles
+vehicles,vehicle.n.01,1,vehicle,vehicles vehicle
+vehicles,fomite.n.01,4,fomite,vehicles fomite
+manufacturers,,0,,manufacturers
+manufacturers,manufacturer.n.01,1,maker,manufacturers maker
+manufacturers,manufacturer.n.02,2,producer,manufacturers producer
+hope,,0,,hope
+hope,promise.n.02,3,promise,hope promise
+hope,hope.n.05,5,Bob,hope Bob
+kansas,,0,,kansas
+kansas,kansas.n.01,1,KS,kansas KS
+kansas,kansa.n.01,2,Kansa,kansas Kansa
+kansas,kansas.n.03,3,River,kansas River
+harris,,0,,harris
+harris,harris.n.01,1,Joel,harris Joel
+harris,harris.n.02,2,Zellig,harris Zellig
+harris,harris.n.03,3,Townsend,harris Townsend
+harris,harris.n.04,4,Frank,harris Frank
+harris,harris.n.05,5,Bomber,harris Bomber
+harris,harris.n.06,6,Benjamin,harris Benjamin
+considerations,,0,,considerations
+considerations,consideration.n.01,1,consideration,considerations consideration
+considerations,circumstance.n.03,2,condition,considerations condition
+considerations,retainer.n.01,5,retainer,considerations retainer
+wash,,0,,wash
+wash,wash.n.02,2,washing,wash washing
+wash,wash.n.03,3,dry,wash dry
+wash,washout.n.02,4,washout,wash washout
+wash,slipstream.n.01,5,race,wash race
+wash,wash.n.06,6,drawing,wash drawing
+wash,laundry.n.01,7,laundry,wash laundry
+brother,,0,,brother
+brother,brother.n.01,1,blood,brother blood
+brother,buddy.n.01,3,pal,brother pal
+brother,brother.n.04,4,comrade,brother comrade
+facilities,,0,,facilities
+facilities,facility.n.01,1,facility,facilities facility
+facilities,adeptness.n.01,2,deftness,facilities deftness
+town,,0,,town
+town,town.n.02,2,townsfolk,town townsfolk
+town,township.n.01,3,township,town township
+town,town.n.04,4,Ithiel,town Ithiel
+branch,,0,,branch
+branch,branch.n.01,1,arm,branch arm
+branch,branch.n.03,3,leg,branch leg
+branch,outgrowth.n.01,4,offset,branch offset
+origin,,0,,origin
+origin,beginning.n.04,1,root,origin root
+origin,origin.n.02,2,descent,origin descent
+origin,origin.n.03,3,inception,origin inception
+origin,lineage.n.01,6,line,origin line
+foot,,0,,foot
+foot,foot.n.01,1,pes,foot pes
+foot,foot.n.02,2,ft,foot ft
+foot,animal_foot.n.01,4,animal,foot animal
+foot,foundation.n.03,5,base,foot base
+foot,foot.n.06,6,invertebrate,foot invertebrate
+foot,infantry.n.01,9,infantry,foot infantry
+foot,metrical_foot.n.01,10,metrical,foot metrical
+violence,,0,,violence
+violence,violence.n.01,1,force,violence force
+violence,ferocity.n.01,2,fury,violence fury
+construction,,0,,construction
+construction,construction.n.01,1,building,construction building
+construction,construction.n.02,2,expression,construction expression
+construction,construction.n.03,3,mental_synthesis,construction mental synthesis
+construction,structure.n.01,4,structure,construction structure
+construction,construction.n.06,6,twist,construction twist
+shadow,,0,,shadow
+shadow,darkness.n.02,2,dark,shadow dark
+shadow,apparition.n.03,3,fantasm,shadow fantasm
+shadow,trace.n.02,5,trace,shadow trace
+shadow,tail.n.05,8,tail,shadow tail
+path,,0,,path
+path,way.n.05,1,way,path way
+path,path.n.03,3,route,path route
+path,path.n.04,4,track,path track
+clay,,0,,clay
+clay,mud.n.01,2,mud,clay mud
+clay,clay.n.03,3,Lucius,clay Lucius
+clay,clay.n.04,4,Henry,clay Henry
+clay,cadaver.n.01,5,stiff,clay stiff
+sand,,0,,sand
+sand,sand.n.02,2,George,sand George
+sand,backbone.n.02,3,grit,sand grit
+journal,,0,,journal
+journal,diary.n.01,1,diary,journal diary
+journal,daybook.n.01,3,daybook,journal daybook
+effects,,0,,effects
+effects,effects.n.01,1,personal,effects personal
+effects,consequence.n.01,2,event,effects event
+effects,impression.n.02,3,effect,effects effect
+effects,effect.n.04,5,core,effects core
+effects,effect.n.05,6,force,effects force
+accordance,,0,,accordance
+accordance,accord.n.02,1,accord,accordance accord
+accordance,accordance.n.02,2,of_rights,accordance of rights
+character,,0,,character
+character,fictional_character.n.01,1,fictional,character fictional
+character,quality.n.03,2,quality,character quality
+character,character.n.03,3,fiber,character fiber
+character,character.n.04,4,part,character part
+character,character.n.05,5,case,character case
+character,character.n.07,7,reference,character reference
+character,character.n.08,8,grapheme,character grapheme
+tom,,0,,tom
+tom,tom.n.01,1,Uncle,tom Uncle
+tom,tom.n.02,2,tomcat,tom tomcat
+tom,turkey_cock.n.01,3,turkey,tom turkey
+concerns,,0,,concerns
+concerns,concern.n.01,1,concern,concerns concern
+concerns,concern.n.02,2,care,concerns care
+concerns,concern.n.04,4,worry,concerns worry
+martin,,0,,martin
+martin,martin.n.01,1,St.,martin St.
+martin,martin.n.02,2,Steve,martin Steve
+martin,martin.n.03,3,Mary,martin Mary
+martin,martin.n.04,4,Dean,martin Dean
+arthur,,0,,arthur
+arthur,arthur.n.01,1,President,arthur President
+arthur,arthur.n.02,2,King,arthur King
+block,,0,,block
+block,block.n.02,2,city,block city
+block,block.n.03,3,cube,block cube
+block,block.n.07,7,mental,block mental
+block,pulley.n.01,8,pulley,block pulley
+block,engine_block.n.01,9,engine,block engine
+block,blockage.n.02,10,stop,block stop
+block,auction_block.n.01,11,auction,block auction
+block,blocking.n.01,12,blocking,block blocking
+climate,,0,,climate
+climate,climate.n.01,1,clime,climate clime
+climate,climate.n.02,2,mood,climate mood
+threat,,0,,threat
+threat,menace.n.01,1,menace,threat menace
+threat,terror.n.02,4,terror,threat terror
+delight,,0,,delight
+delight,delight.n.01,1,delectation,delight delectation
+delight,joy.n.02,2,joy,delight joy
+displacement,,0,,displacement
+displacement,supplanting.n.01,1,supplanting,displacement supplanting
+displacement,shift.n.01,2,shift,displacement shift
+displacement,translation.n.07,3,translation,displacement translation
+displacement,displacement.n.04,4,reaction,displacement reaction
+displacement,displacement.n.06,6,deracination,displacement deracination
+activity,,0,,activity
+activity,action.n.02,2,action,activity action
+activity,bodily_process.n.01,3,body_process,activity body process
+activity,activeness.n.02,6,activeness,activity activeness
+structure,,0,,structure
+structure,structure.n.01,1,construction,structure construction
+structure,structure.n.04,4,body,structure body
+structure,social_organization.n.01,5,social,structure social
+edward,,0,,edward
+edward,edward.n.01,1,VIII,edward VIII
+edward,edward.n.02,2,VII,edward VII
+edward,edward.n.03,3,VI,edward VI
+edward,edward.n.04,4,V,edward V
+edward,edward.n.05,5,IV,edward IV
+edward,edward.n.06,6,III,edward III
+edward,edward.n.07,7,II,edward II
+edward,edward.n.08,8,I,edward I
+edward,edward.n.09,9,Prince,edward Prince
+edward,edward.n.10,10,Black_Prince,edward Black Prince
+tension,,0,,tension
+tension,tension.n.01,1,stress,tension stress
+tension,tension.n.02,2,tensity,tension tensity
+tension,latent_hostility.n.01,5,latent_hostility,tension latent hostility
