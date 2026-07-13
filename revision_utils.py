@@ -1,5 +1,5 @@
 """
-Utilities shared by revision analyses (R1.1, R2.2).
+Shared utilities for the literary corpus analyses.
 
 - Loads the already-processed AL / GDJ CSVs.
 - Builds bag-of-words and merged ratio masters.

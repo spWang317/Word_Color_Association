@@ -1,21 +1,17 @@
 """
-R2.6 v2 — Relaxed-filter resampling for the crop robustness check.
+Frequency-random common-noun sampler for the depth-page robustness analysis.
 
-Original filter (v1) restricted to *concrete imageable* WordNet lexnames
-(artifact/food/animal/plant/object/substance/body/shape/phenomenon),
-which a reviewer could argue selects for "well-behaved" words.
-
-v2 RELAXES this by dropping the lexname restriction. We keep only the
-*minimal defensive* filters:
+Filters applied:
 - length >= 4, alphabetic
 - not stopwords, color terms, numbers, profanity
-- noun-dominant in WordNet (so that "choose" / "fake" don't dominate the sample)
-- not a proper noun (handled separately by R2.3 polysemy demo)
+- noun-dominant in WordNet (so that verb-dominant lemmas like "choose"
+  or "fake" do not dominate the sample)
+- not a proper noun (WordNet instance-hypernym)
 - singular base form (drop plurals)
 
-This widens the sampled population to include abstract concepts, social/
-relational nouns, and any imageable/non-imageable common noun — testing
-robustness across a broader word distribution.
+No lexname restriction is applied, so the sampled population spans
+abstract concepts, social/relational nouns, and any common noun —
+testing robustness across a broad word distribution.
 
 Source: wordfreq (Speer et al.) aggregated English frequency.
 """
@@ -87,12 +83,10 @@ def main():
         n_adj = len(wn.synsets(w, pos="a")) + len(wn.synsets(w, pos="s"))
         if n_noun == 0 or n_noun < n_verb or n_noun < n_adj:
             continue
-        # exclude proper nouns (WordNet instances: Europe, Pacific, ...) —
-        # these are handled separately by the R2.3 polysemy demo
+        # exclude proper nouns (WordNet instances: Europe, Pacific, ...)
         syns = wn.synsets(w, pos="n")
         if syns and syns[0].instance_hypernyms():
             continue
-        # *** v2: NO concrete-imageable lexname restriction ***
         candidates.append(w)
 
     print(f"Candidate common nouns (top {TOP_POOL}, RELAXED filter): {len(candidates)}")

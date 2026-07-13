@@ -1,3 +1,4 @@
+# local development / private tracking
 _revision_dev/
 venv/
 .hidden_backups_*/
@@ -5,3 +6,18 @@ venv/
 __pycache__/
 .ipynb_checkpoints/
 *.pyc
+
+# scraping outputs — regenerated from the included scraping scripts
+Images/original_images/
+Images/temp/
+Images/r23_raw/
+Images/r23_visible/
+Images/r25_date_test/
+Images/r26_raw/
+Images/r26_raw_v2/
+Images/r26b_pages/
+Images/rathore_raw/
+
+# only the base-color reference PNGs in Images/resize_images/ are tracked;
+# any additional (compound-query) scraping output there is ignored.
+Images/resize_images/* *

@@ -15,7 +15,7 @@ from PIL import Image
 
 from revision_utils import RESULTS_DIR
 
-# Raw screenshots captured for the R2.6 word set (800x438 full-res).
+# Raw viewport screenshots captured by the depth-page scraper (800x438 full-res).
 SCREENSHOT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                               "Images", "r26_raw")
 

@@ -1,5 +1,5 @@
 """
-R1.1 — Sensitivity of the Lowell-vs.-Johnson color contrast to the relative
+Sensitivity of the Lowell-vs.-Johnson color contrast to the relative
 weight given to *indirect* (non–direct-color) words.
 
 Default in the manuscript: indirect_weight = 1.0 (1:1 BoW, no special
@@ -157,7 +157,7 @@ def main(B: int = 10000, seed: int = 123):
                   r"(1.0 = manuscript default, 0.0 = direct color terms only)",
                   fontsize=12)
     ax.set_ylabel(r"$\Delta$ (Lowell $-$ Johnson) per color", fontsize=12)
-    ax.set_title("R1.1 — sensitivity of per-color contrast to indirect-word weight")
+    ax.set_title("Sensitivity of per-color contrast to indirect-word weight")
     ax.legend(loc="center left", bbox_to_anchor=(1.02, 0.5), fontsize=10)
     plt.tight_layout()
     fig_path = os.path.join(RESULTS_DIR, "weighting_sensitivity.png")
