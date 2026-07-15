@@ -18,6 +18,11 @@ Images/r26_raw_v2/
 Images/r26b_pages/
 Images/rathore_raw/
 
-# only the base-color reference PNGs in Images/resize_images/ are tracked;
-# any additional (compound-query) scraping output there is ignored.
-Images/resize_images/* *
+# The base-color reference PNGs already committed here stay tracked; any new
+# scraping output written to this directory is ignored (.gitignore does not
+# affect already-tracked files).
+Images/resize_images/
+
+# regenerable analysis figures (produced by the analysis scripts from the
+# tracked CSVs); the manuscript-ready PDFs are submitted separately.
+figures/
