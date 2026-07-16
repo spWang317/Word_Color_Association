@@ -129,10 +129,12 @@ Each script produces CSV / PDF / PNG / summary-MD outputs under
   publicly traded companies (by market capitalization, TradingView,
   February 2025)
 - `csv/revision_results/` — per-analysis outputs
-- `Images/resize_images/` — 10,000-pixel resized reference samples for the
-  ten base colors and their Oxford American Writer's Thesaurus synonyms
-- `brand materials/` — Wikipedia-sourced logo material for the top-100
-  companies (used by `LogoAndScreenshotOfBrands.ipynb`)
+- `brand materials/` — the brand list and numerical outputs for the top-100
+  companies. Google screenshots and corporate logo images are not
+  redistributed (see `brand materials/README.txt`); they are re-scraped by
+  `LogoAndScreenshotOfBrands.ipynb`
+- `Images/` — not redistributed (third-party Google Image content; see
+  `Images/README.txt`); recreated locally by the scraping scripts
 - `external_compare/` — public datasets from prior approaches (Rathore
   UW-58 / BCP-37; comp-syn JzAzBz embeddings) used by validation scripts
 

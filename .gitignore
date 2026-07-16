@@ -22,6 +22,10 @@ Images/rathore_raw/
 # scraping output written to this directory is ignored (.gitignore does not
 # affect already-tracked files).
 Images/resize_images/
+brand materials/Resize_Image/
+brand materials/company_logos_resize/
+brand materials/Original_Image/
+brand materials/temp/
 
 # regenerable analysis figures (produced by the analysis scripts from the
 # tracked CSVs); the manuscript-ready PDFs are submitted separately.
