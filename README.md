@@ -120,12 +120,6 @@ Each script produces CSV / PDF / PNG / summary-MD outputs under
   error bars)
 - `make_serp_grids.py` — moss / lilac schematic SERP grids used as
   components of Fig 1 and Fig 2
-- `extract_company_vectors.py` — re-extracts the per-company 10-d color
-  vectors in `company_data/` from locally re-scraped imagery. The chromatic
-  and the achromatic blocks are each normalised to sum to one, as in the
-  manuscript. Because the logo and web imagery cannot be redistributed and
-  is re-scraped at run time, the values it produces are close to, but not
-  identical with, the published ones in `brand materials/`.
 
 ## Data
 
