@@ -120,14 +120,21 @@ Each script produces CSV / PDF / PNG / summary-MD outputs under
   error bars)
 - `make_serp_grids.py` — moss / lilac schematic SERP grids used as
   components of Fig 1 and Fig 2
-- `extract_company_vectors.py` — regenerates the company color-vector
-  CSVs in `company_data/`
+- `extract_company_vectors.py` — re-extracts the per-company 10-d color
+  vectors in `company_data/` from locally re-scraped imagery. The chromatic
+  and the achromatic blocks are each normalised to sum to one, as in the
+  manuscript. Because the logo and web imagery cannot be redistributed and
+  is re-scraped at run time, the values it produces are close to, but not
+  identical with, the published ones in `brand materials/`.
 
 ## Data
 
-- `company_data/` — color vectors and cosine similarities of the top-100
-  publicly traded companies (by market capitalization, TradingView,
-  February 2025)
+- `company_data/` — re-extracted 10-d color vectors of the top-100 publicly
+  traded companies (by market capitalization, TradingView, February 2025)
+- `brand materials/sorted_cosine_values.csv`,
+  `brand_similarity_all_metrics.csv`, `cosine_summary_by_sector.csv` — the
+  logo-vs-web-image cosine similarities and per-sector means reported in the
+  manuscript (Fig 3, Fig 5 and S4 Table)
 - `csv/revision_results/` — per-analysis outputs
 - `brand materials/` — the brand list and numerical outputs for the top-100
   companies. Google screenshots and corporate logo images are not

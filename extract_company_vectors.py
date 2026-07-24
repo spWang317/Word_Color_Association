@@ -103,7 +103,13 @@ def vectorize(lch: np.ndarray) -> dict[str, float]:
                 if lo <= L <= hi:
                     counts[color] += 1
                     break
-    return {k: counts[k] / n for k in ALL_KEYS}
+    # The manuscript normalises the chromatic and the achromatic blocks
+    # separately, so each block sums to one.
+    c_tot = sum(counts[k] for k in CHROMATIC_KEYS) or 1
+    a_tot = sum(counts[k] for k in ACHROMATIC_KEYS) or 1
+    out = {k: counts[k] / c_tot for k in CHROMATIC_KEYS}
+    out.update({k: counts[k] / a_tot for k in ACHROMATIC_KEYS})
+    return out
 
 
 def cosine(u: np.ndarray, v: np.ndarray) -> float:
