@@ -123,12 +123,12 @@ Each script produces CSV / PDF / PNG / summary-MD outputs under
 
 ## Data
 
-- `company_data/` — re-extracted 10-d color vectors of the top-100 publicly
-  traded companies (by market capitalization, TradingView, February 2025)
 - `brand materials/sorted_cosine_values.csv`,
   `brand_similarity_all_metrics.csv`, `cosine_summary_by_sector.csv` — the
   logo-vs-web-image cosine similarities and per-sector means reported in the
-  manuscript (Fig 3, Fig 5 and S4 Table)
+  manuscript for the top-100 publicly traded companies (by market
+  capitalization, TradingView, February 2025), used for Fig 3, Fig 4 and
+  S4 Table
 - `csv/revision_results/` — per-analysis outputs
 - `brand materials/` — the brand list and numerical outputs for the top-100
   companies. Google screenshots and corporate logo images are not
