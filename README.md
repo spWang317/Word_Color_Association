@@ -123,8 +123,8 @@ Each script produces CSV / PDF / PNG / summary-MD outputs under
 
 ## Data
 
-- `brand materials/sorted_cosine_values.csv`,
-  `brand_similarity_all_metrics.csv`, `cosine_summary_by_sector.csv` — the
+- `brand materials/brand_similarity_all_metrics.csv`,
+  `cosine_summary_by_sector.csv` — the
   logo-vs-web-image cosine similarities and per-sector means reported in the
   manuscript for the top-100 publicly traded companies (by market
   capitalization, TradingView, February 2025), used for Fig 3, Fig 4 and
