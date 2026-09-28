@@ -51,6 +51,7 @@ def make_driver():
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument(f"--window-size={WINDOW_WIDTH},{VIEWPORT_HEIGHT}")
     options.add_argument("--guest")
+    options.add_argument("--lang=en-US")
     options.add_argument("--disable-extensions")
     options.add_argument("--disable-plugins")
     options.add_argument("--force-color-profile=srgb")
@@ -106,7 +107,8 @@ def capture_word(word, driver):
     os.makedirs(out_dir, exist_ok=True)
     page_paths = {}
 
-    driver.get("https://www.google.com/imghp")
+    # Fix region and interface language so results do not depend on the host locale.
+    driver.get("https://www.google.com/imghp?hl=en&gl=us")
     time.sleep(4)
     search_box = driver.find_element(By.NAME, "q")
     search_box.send_keys(word)

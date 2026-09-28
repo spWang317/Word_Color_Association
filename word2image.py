@@ -35,6 +35,7 @@ def google_image_search_screenshot(keyword,screenshot_dir):
     # the result independent of the host OS theme. This is what guarantees the
     # white-divider trimming pipeline (S1 Fig) works correctly under incognito.
     options.add_argument("--incognito")
+    options.add_argument("--lang=en-US")
     options.add_argument("--disable-extensions")
     options.add_argument("--disable-plugins")
     options.add_argument("--force-color-profile=srgb")
@@ -55,7 +56,8 @@ def google_image_search_screenshot(keyword,screenshot_dir):
 
     try:
         # Navigate to Google Images
-        driver.get("https://www.google.com/imghp")
+        # Fix region and interface language so results do not depend on the host locale.
+        driver.get("https://www.google.com/imghp?hl=en&gl=us")
         
         # Perform the search
         search_box = driver.find_element(By.NAME, "q")

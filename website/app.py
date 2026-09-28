@@ -70,14 +70,16 @@ def google_image_search_screenshot(keyword,screenshot_dir):
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--start-maximized")  # browser maximize
-    options.add_argument("--incognito")  
+    options.add_argument("--incognito")
+    options.add_argument("--lang=en-US")
     options.add_argument("disable-blink-features=AutomationControlled")  
     options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36")
     driver = webdriver.Chrome(options=options)
 
     try:
         # Navigate to Google Images
-        driver.get("https://www.google.com/imghp")
+        # Fix region and interface language so results do not depend on the host locale.
+        driver.get("https://www.google.com/imghp?hl=en&gl=us")
         
         # Perform the search
         search_box = driver.find_element(By.NAME, "q")
