@@ -82,7 +82,8 @@ python app.py
 ## External validation
 
 Each script produces CSV / PDF / PNG / summary-MD outputs under
-`csv/revision_results/`.
+`csv/revision_results/`. The NRC lexicon and the comp-syn vectors are third-party data and
+are not included; `data_external/README.md` lists where to download them.
 
 - `nrc_validation.py` — NRC Word–Colour Association Lexicon
   (Mohammad 2013): per-color one-vs-rest AUC + confusion matrix
@@ -136,8 +137,9 @@ Each script produces CSV / PDF / PNG / summary-MD outputs under
   `LogoAndScreenshotOfBrands.ipynb`
 - `Images/` — not redistributed (third-party Google Image content; see
   `Images/README.txt`); recreated locally by the scraping scripts
-- `external_compare/` — public datasets from prior approaches (Rathore
-  UW-58 / BCP-37; comp-syn JzAzBz embeddings) used by validation scripts
+- `external_compare/` — datasets from prior approaches used by the validation scripts
+  (Rathore UW-58 / BCP-37; comp-syn JzAzBz embeddings). The comp-syn vectors and the NRC
+  lexicon are not redistributed; see `data_external/README.md` for where to obtain them
 
 ## Citation
 

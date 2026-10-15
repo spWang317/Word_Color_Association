@@ -30,3 +30,10 @@ brand materials/temp/
 # regenerable analysis figures (produced by the analysis scripts from the
 # tracked CSVs); the manuscript-ready PDFs are submitted separately.
 figures/
+
+# third-party data — not redistributed (see data_external/README.md)
+data_external/NRC-Colour-Lexicon-v0.92/
+data_external/NRC-Colour-Lexicon-v0.92.zip
+data_external/__MACOSX/
+data_external/nrc_color_v0.92.txt
+external_compare/compsyn/compsyn_vectors.json
